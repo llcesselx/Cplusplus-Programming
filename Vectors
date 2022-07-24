@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+
+	// Declaring and initializing a vector
+	vector <int> catAges(7, 1);
+	
+	// Showing the elemnents of the vector before any changes are made
+	cout << "This is our vector.";
+	cout << "\n Vector size? " << catAges.size() << endl;
+	cout << "Is vector empty? " << catAges.empty() << endl;
+	cout << "First element: " << catAges.front() << endl;
+
+	// Deleting the last element of the vector and displaying the new size.
+	cout << endl << "We deleted the last element." << endl;
+	catAges.pop_back();
+	cout << "Vector new size: " << catAges.size() << endl;
+	cout << "Final element? " << catAges.back() << endl;
+
+	// Clearing the vector completely and checking the new size
+	cout << endl << "We cleared the vector." << endl;
+	catAges.clear();
+	cout << "Vector newest size: " << catAges.size() << endl;
+
+	// Adding a new element to the vector and checking its size now.
+	cout << "\n We added a new element to the cleared vector." << endl; 
+	catAges.push_back(200);
+	cout << "Vector new newest size: " << catAges.size() << endl;
+	cout << "Vectors new final element: " << catAges.back() << endl;
+
+	return 0;
+}
