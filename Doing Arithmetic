@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	// Declaring and initializing two variables.
+	int a = 8, b = 4;
+
+  // Performing basic arithmetic operations
+	cout << "Variable a = " << a << "\nVariable b = " << b << endl;
+	cout << "Addition result: " << (a + b) << endl;
+	cout << "Subtraction result: " << (a - b) << endl;
+	cout << "Multiplication result: " << (a * b) << endl;
+	cout << "Division result: " << (a / b) << endl;
+	cout << "Modulus (%) result: " << (a % b) << endl;
+
+  // Incrementing a value by one using post and prefix placements
+	cout << "Postfix increment: " << a++ << endl;
+	cout << "Postfix result: " << a << endl;
+	cout << "Prefix increment: " << ++b << endl;
+	cout << "Prefix result: " << b << endl;
+
+	return 0;
+}
