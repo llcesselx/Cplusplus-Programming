@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+
+	// Declaring a constant variable
+	const double Pi = 3.1415926536;
+	cout << "6\" circle circumference: " << (Pi * 6) << endl;
+
+	// Declaring an enumerated list of constants
+	enum {
+		RED = 1, YELLOW, GREEN, BROWN, BLUE, PINK, BLACK
+	};
+	cout << "I shot a red worth: " << RED << endl;
+	cout << "I shot a blue worth: " << BLUE << endl;
+	cout << "Total Score: " << (RED + BLUE) << endl;
+
+	// Declaring a custom data type and outputing its assigned values
+	typedef enum { NEGATIVE, POSITIVE } charge;
+	charge neutral = NEGATIVE, live = POSITIVE;
+	cout << "Negative wire: " << neutral << endl;
+	cout << "Live wire: " << live << endl;
+
+	return 0;
+}
