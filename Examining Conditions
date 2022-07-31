@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// The ternary operator ?: is a powerful operator than can check a condition
+	// and return an expression based on the returned value from the condition.
+	// 
+	// For example: 
+	int age = 29, birthMonth = 4, birthDay = 8, toMonth = 7, toDay = 31;
+	(birthMonth == toMonth) ? "It is your birth month!" : "It is not your birth month.";
+
+
+	// Another example of how powerful this operator is assigning a third variable 
+	// with the ternary operator. The expression below assigns the variable modulusNum
+	// the number 999 if the remainder of the number five divided by number two is one. 
+	// If it is not equal to one, then the variable, modulusNum, is assigned the number
+	// zero. 
+	// 
+	// For example: 
+	int numOne = 1, numTwo = 2, numFive = 5, numTen = 10, modulusNum;
+	modulusNum = (numFive % numTwo == 1) ? 999 : 0;
+	cout << modulusNum << endl;
+	
+
+	// The ternary operator can return a variable of different data types like numbers,
+	// strings, boolean values, etc. 
+	// 
+	// For example: 
+	int myAge, pineyAge = 1;
+	string whosOlder;
+	cout << "\nEnter your age: ";
+	cin >> myAge;
+	whosOlder = (myAge > pineyAge) ? "\nYou are older than Piney." : "\nPiney is older than you.";
+	cout << whosOlder << endl;
+
+	return 0;
+}
