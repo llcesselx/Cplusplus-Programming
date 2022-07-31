@@ -1,0 +1,47 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+	// Declaring variables
+	int age = 29, pazzyAge = 3, percyAge = 6, jacksonAge = 5, pineyAge = 1;
+
+	// An example of the AND ( && ) logical operator returning true.
+	cout << "Example of the && operator: " << endl;
+	cout << "\nIf my age is greater than Percy's age AND my age is greater than Jackson's age, then it will print I am the oldest." << endl;
+
+	// If statement to demonstrate the && operator and what will happen if it is true.
+	if ((age > percyAge) && (age > jacksonAge)) {
+		cout << "\nYour Age: " << age << "\nPercy's Age: " << percyAge << "\nJackson's Age: " << jacksonAge << endl;
+		cout << "\nYou are the oldest." << endl;
+	}
+
+	// An example of the AND ( && ) logical operator returning false. 
+	cout << "\nIf Jackson's age is greater than Percy's age and greater than Pazzy's age, then Jackson is the oldest cat." << endl;
+	cout << "If either or both of those statements are false, then the program will print Jackson is NOT the oldest cat." << endl;
+
+	// If statement to demonstrate the && operator and what will happen if it is false. 
+	if ((jacksonAge > percyAge) && (jacksonAge > pazzyAge)) {
+		cout << "\nJackson is the oldest cat." << endl;
+	}
+	else {
+		cout << "\nJackson is NOT the oldest cat." << endl;
+	}
+
+	// Book examples.
+
+	int a = 1, b = 0;
+
+	cout << " a = " << a << "   b = " << b << endl;
+	cout << "\nAND Logic: " << endl;
+	cout << "(a && a)" << (a && a) << "(true)";
+	cout << "(a && b)" << (a && b) << "(false)";
+	cout << "(b && b)" << (b && b) << "(true)" << endl;
+
+	cout << "\nOR Logic: " << endl;
+	cout << "(a || a)" << (a || a) << "(true)";
+	cout << "(a || b)" << (a || b) << "(true)";
+	cout << "(b || b)" << (b || b) << "(false)" << endl;
+	cout << "\nThe statement b || b is equal to false because b = 0. Two falses do not make a true.";
+
+	return 0;
+}
