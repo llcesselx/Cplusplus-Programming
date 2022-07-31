@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// Different variables of different data types. 
+	// We are declaring the variables but not assigning anything to 
+	// them yet. 
+	int num; int nums[50]; float decimal; 
+	bool isTrue; unsigned int max; char letter;
+	double pi; short int number; char letters[50];
+
+	// This next chunk of code tells the program to display the
+	// byte size of each variable. A byte is a group of 8 bits. 
+	// Usually like 10110011  
+	cout << "int size: " << sizeof(num) << endl;
+	cout << "array of 50 int variables size: " << sizeof(nums) << endl;
+	cout << "short int size: " << sizeof(number) << endl;
+	cout << "unsigned int size: " << sizeof(max) << endl;
+
+	cout << "\ndouble size: " << sizeof(pi) << endl;
+	cout << "float size: " << sizeof(decimal) << endl;
+	cout << "char size: " << sizeof(letter) << endl;
+	cout << "array of 50 chars size: " << sizeof(letters) << endl;
+	cout << "bool size: " << sizeof(isTrue) << endl;
+
+	return 0; 
+}
