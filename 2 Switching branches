@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std; 
+
+// A program that takes takes a players dice roll and returns the value of 
+// health they lose for a table rpg game. 
+int main() {
+	
+	// Declaring and initializing the dice roll variable. 
+	int diceRoll{ 0 };
+
+	cout << "Enter dice roll: ";
+	cin >> diceRoll;
+		
+	// A switch statement that executes the following statements
+	// depending on the result of the diceRoll variable.
+	switch (diceRoll)
+	{
+	case 1: cout << "You lost 1 health" << endl; break;
+	case 2: cout << "You lost 3 health" << endl; break;
+	case 3: cout << "You lost 5 heatlh" << endl; break;
+	case 4: cout << "You lost 10 health" << endl; break;
+	case 5: cout << "You lost 15 health" << endl; break;
+	case 6: cout << "You lost 20 health" << endl; break;
+	}
+
+
+	return 0; 
+}
