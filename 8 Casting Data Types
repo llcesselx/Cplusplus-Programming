@@ -1,0 +1,32 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+	// Data casting is forcing the variable into a different data type than what 
+	// it would be by default. 
+
+	float myResult = static_cast < float> (7) / 2; 
+	cout << myResult << endl << endl;
+
+	// Declaring and initializng variables.
+	int num = 7, factor = 2;
+	char letter = 'A';
+	float result = 0.0;
+
+	// Integer division. num / factor
+	cout << "Integer division: " << (num / factor) << endl;
+
+	// Casting an integer into a float (num) / factor
+	result = (float)(num) / factor;
+	cout << "Cast division float: " << result << endl;
+
+	// Casting a character into an integer
+	num = static_cast <int> (letter);
+	cout << "Cast character int: " << num << endl;
+
+	// Casting an integer into a character
+	letter = static_cast <char> (70);
+	cout << "Cast integer char: " << letter << endl;
+
+	return 0; 
+}
