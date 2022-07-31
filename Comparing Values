@@ -11,7 +11,7 @@ cout << "0 == 0 " << (nil == num) << " (true)" << endl;
 cout <<"A == a " << (cap == low) << " (false)" << endl;
 
 // Statements to output other comparisons
-cout << "\n1 != 0 " << (max == num) << " (false)" << endl;
+cout << "\n1 != 0 " << (max != num) << " (true)" << endl;
 cout << "1 > 0 " << (max > num) << " (true)" << endl;
 cout << "1 < 0 " << (max < num) << " (false)" << endl;
 cout << "1 >= 0 " << (max >= num) << " (true)" << endl;
