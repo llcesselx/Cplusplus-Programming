@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// Declaring two integer variables
+	int intOne, intTwo;
+
+	// User input to initialize variables
+	cout << "Enter two numbers." << "\nNumber One: "; 
+	cin >> intOne;
+	cout << "Number Two: ";
+	cin >> intTwo;
+	cout << "\nThe variable intOne was assigned " << intOne << endl;
+	cout << "The variable intTwo was assigned " << intTwo << endl;
+
+	// Assigning variables with operators.
+	// Adding 
+	cout << "\nThe first integer added with the second integer is: ";
+	cout << (intOne += intTwo) << endl;
+	cout << "So now the variable intOne = " << intOne << endl;
+	// Subtracting
+	cout << "\nThe first integer subtraced the second integer is: ";
+	cout << (intOne -= intTwo) << endl;
+	cout << "So now the variable intOne = " << intOne << endl;
+	// Multiplying
+	cout << "\nThe first integer multiplied with the second integer is: ";
+	cout << (intOne *= intTwo) << endl;
+	cout << "So now the variable intOne = " << intOne << endl;
+	// Dividing
+	cout << "\nThe first integer divided by the second integer is: ";
+	cout << (intOne /= intTwo) << endl;
+	cout << "So now the variable intOne = " << intOne << endl;
+	// Modulus
+	cout << "\nThe remainder of the first intger being divided by the second integer is: ";
+	cout << (intOne %= intTwo) << endl;
+	cout << "So now the variable intOne = " << intOne << endl;
+
+	cout << "\nThese results also reassigned the first integer with the result." << endl;
+
+	return 0;
+
+	
+}
