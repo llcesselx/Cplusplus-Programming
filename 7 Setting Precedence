@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std; 
+
+int main() {
+	// Operator precedence sets the order the program will execute 
+	// expressions. For example x = 5 + 3 * 2 , because of the order of operations 
+	// the program will multiply 3 * 2 first and then add the result to 5. The 
+	// answer would be 11. But if it were x = 5 * 3 + 2 , it would multiply 5 * 3 first 
+	// and then add 2 so the answer would be 17. 
+	int x;
+	x = 5 + 3 * 2;
+	cout << x << endl;
+	x = 5 * 3 + 2;
+	cout << x << endl;
+
+	// Operator Precedence 
+	// 
+	// Operator:							| Direction:
+	// _____________________________________|__________________________________________________
+	// () Function Call		[] Array Index	|
+	// -> Class pointer		. Class member	|	Left to Right
+	// _____________________________________|__________________________________________________
+	// ! Logical NOT		* Pointer		|
+	// -- Decrement			++ Increment	|
+	// + Positive sign		- Negative Sign	|	Right to Left
+	// sizeof Size of		& Address of	|
+	// _____________________________________|__________________________________________________
+	// * Multiply			/ Divide		|
+	// % Modulus							|	Left to Right
+	// _____________________________________|__________________________________________________
+	// + Add				- Subtract		|	Left to Right
+	// _____________________________________|__________________________________________________
+	// <= Less or equal		< Less than		|	Left to Right
+	// >= Greater or equal	> Greater than	|
+	// _____________________________________|__________________________________________________
+	// == Equality			!= Inequality	|	Left to Right
+	// _____________________________________|__________________________________________________
+	//	&& Logical AND						|	Left to Right
+	// _____________________________________|__________________________________________________
+	// || Logical OR						|	Left to Right
+	// _____________________________________|__________________________________________________
+	// ?: Ternary							|	Right to Left
+	// _____________________________________|__________________________________________________
+	// += -= *= /= %=	Assignments			|	Right to Left
+	// _____________________________________|__________________________________________________
+	// , Comma								|	Left to Right
+	//										|
+	// 
+
+	int num = 1 + 4 * 3;
+	cout << "\nDefault Order: " << num << endl;
+	num = (1 + 4) * 3;
+	cout << "Forced Order: " << num << endl << endl;
+	num = 7 - 4 + 2;
+	cout << "Default Direction: " << num << endl;
+	num = 7 - (4 + 2);
+	cout << "Forced Direction: " << num << endl;
+
+	return 0;
+}
