@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+// Declaring and initializing Boolean variables
+int nil = 0, num = 0, max = 1; char cap = 'A', low = 'a';
+
+//Statements to output equality comparisons of integers and characters
+cout << "Equality Comparisons: " << endl;
+cout << "0 == 0 " << (nil == num) << " (true)" << endl;
+cout <<"A == a " << (cap == low) << " (false)" << endl;
+
+// Statements to output other comparisons
+cout << "\n1 != 0 " << (max == num) << " (false)" << endl;
+cout << "1 > 0 " << (max > num) << " (true)" << endl;
+cout << "1 < 0 " << (max < num) << " (false)" << endl;
+cout << "1 >= 0 " << (max >= num) << " (true)" << endl;
+cout << "0 <= 1 " << (num <= max) << " (true)" << endl;
+
+return 0;
+}
