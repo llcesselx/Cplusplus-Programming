@@ -1,0 +1,39 @@
+#include <iostream> 
+using namespace std; 
+
+int main() {
+
+	int num = 8;
+	char letter = 'A';
+	// An if statement and a nested if statement. If the first condition is true, it will
+	// run the code inside the brackets. Since there is another if statement within the first
+	// if statement, the code will check to see if the test condition is true. If it is, it will
+	// run the code within the brackets of the nested if statement. If it is not true, it will
+	// end the whole if statement. 
+	cout << " Iteration 1:" << endl;
+	if (num > 5) {
+		cout << " Number exceeds five" << endl;
+		if (letter == 'A') {
+			cout << " Letter is A" << endl;
+		}
+	}
+	else {
+		cout << " Number is less than five" << endl;
+	}
+	// An if statement where the first condition is true and the second condition is false. 
+	cout << "\n Iteration 2: ";
+	if (num > 5) {
+		cout << " Number exceeds five" << endl;
+		if (letter == 'B') {
+			cout << " Letter is B" << endl;
+		}
+		else {
+			cout << " Letter is not B" << endl;
+		}
+	}
+	else {
+		cout << " umber is less than five" << endl;
+	}
+
+	return 0; 
+}
