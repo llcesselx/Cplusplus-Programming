@@ -11,8 +11,9 @@ Chapter 2 Performing Operations
   3 Comparing Values
   4 Assessing Logic
   5 Examinging conditions
-  6 Setting precedence
-  7 Casting data types
+  6 Establishing size
+  7 Setting precedence
+  8 Casting data types
 Chapter 3 Making Statements
   1 Branching with if
   2 Switching branches
